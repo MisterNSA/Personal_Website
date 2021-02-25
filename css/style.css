@@ -511,22 +511,6 @@ header {
     height: auto;
 }
 
-@media (max-width: 800px){
-    .portfolio-item-individual__img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        height: auto;
-    }
-    
-    .portfolio-item-individual__img-wide {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 85%;
-        height: auto;
-}
 
 /* Asperger */
 
