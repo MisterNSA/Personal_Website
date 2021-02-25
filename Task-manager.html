@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Portfolio-Website</title>
+    <!-- Stylesheets aus dem internet für z.B. Symbole etc.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/4911c7165a.js" crossorigin="anonymus"></script>
+
+    <!-- Fonts, die relativ gut aussahen -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- I dont use it because I know how to use it, I use it cause I cant save it as .jpg or .png ... -->
+            <img src="img/Logo.svg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="menu-toggle"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#skills" class="nav__link">Fähigkeiten und Interessen</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">Über mich</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">Meine Projekte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Der<strong>Task-Managerr</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro" style="text-align: left;">pun intended
+        </p>
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Dieser Bot entstand, als das Spiel Among Us gerade sehr beliebt war. Among Us ist ein
+            Online-Mehrspieler-Deduktionsspiel. Eine Grupe muss Aufgaben erledigen, die andere muss versuchen sie dabei
+            zu behindern und unauffällig auszuschalten. Das Spiel an und für sich enthält allerdings nicht allzu viel
+            Gameplay, sondern setzt Fokus auf die Diskussion der Spieler, um die Verräter ausfindig zu machen.</p>
+        <p>Da das Spiel recht schnell langweilig wurde überlegte ich, wie ich es spanender gestalten könnte und kam auf
+            die Idee, weitere geheime Rollen mit Bonusaufgaben hinzuzufügen, die es erschwerten die Verräter zu finden.
+            Da die meisten Leute während den Runden über Discord telefonierten, entschied ich mich, einen Bot für
+            Discord zu entwickeln.</p>
+        <br>
+        <p></p>
+
+        <figure>
+            <img src="Project-img/Task/Task_1.PNG" alt="" class="portfolio-item-individual__img-wide">
+            <figcaption> Bisher implementierte Befehle
+            </figcaption>
+        </figure>
+
+        <p>Das ganze beruht auf einem Bot, der mit der Discord API kommuniziert. Wenn Spiele bestimmte Befehle wie z.B.
+            ?Rolle eingeben, schickt ihnen der Bot eine Privatnachricht mit ihrer Rolle und der zugehörigen
+            Beschreibung. Die Rollen sind im Bot hinterlegt. Da ich das ganze allerdings auf Cogs aufgebaut habe, kann
+            man auch im laufenden Betrieb einfach Änderungen vornehmen und muss nur den entsprechenden Cog neu laden.
+        </p>
+
+        <p>Zuerst hatte ich den Code immer auf meinem Rechner ausgeführt, allerdings war der Bot dann auch nur Online,
+            wenn ich Online war. Da die anderen Personen auf den Servern ihn so nicht immer nutzen konnten, war der Bot
+            nicht allzu brauchbar</p>
+        <p>Da es nur ein Nebenprojekt war, hatte ich allerdings auch keine Lust den Bot gegen Münzeinwurf irgendwo
+            hosten zu lassen</p>
+        <p>Nach etwas recherche und Probiererei kam ich zu einer Dämlichen, wenn auch irgendwie genialen Idee</p>
+        <p>Es gibt eine Online-IDE mit dem Namen repl.it, bei der Code online ausgeführt, also schonmal in die Richtung
+            geht. Allerdings war hier das Problem, dass der Code gestoppt wird, wenn mehr als 30 Minuten nicht mit dem
+            Code interagiert wurde. Also machte ich das einzigst sinnvolle <i>Hust</i>. Ich erstellte einen simplen
+            Webserver, auf dem der Bot lief und nutzte einen kostenlosen Dienst namens Uptime-Robot, um den Server alle
+            5 Minuten zu pingen.
+        </p>
+        <p>Ja... Sagen wir einfach mal, es hat funktioniert, auch wenn die Lösung wahrscheinlich ziemlich dämlich ist.
+        </p>
+
+        <figure>
+            <img src="Project-img/Task/Task_2.PNG" alt="" class="portfolio-item-individual__img-wide" width="100%"
+                height="130">
+            <figcaption> Beispielhafte Ausgabe für den ?rolle Befehl
+            </figcaption>
+        </figure>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Soziales / Profile - Momentan noch nicht viel zu sehen -->
+        <a href="mailto:tobiasweber1029@gmail.com" class="footer__link">tobiasweber1029@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://repl.it/@MisterNSA/TaskManager#main.py">
+                    <img src="Project-img/Task/replit.svg" class="logo">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src=" js/index.js"></script>
+
+</body>
+
+</html>

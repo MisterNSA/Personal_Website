@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Portfolio-Website</title>
+    <!-- Stylesheets aus dem internet für z.B. Symbole etc.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/4911c7165a.js" crossorigin="anonymus"></script>
+
+    <!-- Fonts, die relativ gut aussahen -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- I dont use it because I know how to use it, I use it cause I cant save it as .jpg or .png ... -->
+            <img src="img/Logo.svg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="menu-toggle"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#skills" class="nav__link">Fähigkeiten und Interessen</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">Über mich</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">Meine Projekte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Der<strong>Sudoku Solver</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro" style="text-align: right;">Wozu auch immer man ihn braucht
+        </p>
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Wozu man dieses Projekt brauche weiß ich ehrlich gesagt nicht</p>
+        <p>Zumindest wenn ich davon ausgehe, dass man Sudokus zum Spaß macht</p>
+        <p>Bei einem Sudoku Wettbewerb wäre es wahrscheinlich auch schwierig, einen Laptop mit hinein zu schmuggeln</p>
+        <p>Was auch immer, hauptsache es funktioniert. Wo war ich nochmal? Ach ja</p>
+
+        <figure>
+            <img src="Project-img/Sudoku/sudo_v.PNG" alt="" class="portfolio-item-individual__img">
+            <figcaption> Irgendein Sudoku aus dem Internet
+            </figcaption>
+        </figure>
+
+        <p>Eingelesen werden die Sudokus als Numpy Array, da dies zum einen die Geschwindigeit erhöht und andererseits
+            ein paar nützliche Funktionen mit sich bringt.</p>
+        <p>Der Kern dieses Projekts ist ein Backtracking Algorithmus</p>
+        <p>Beim Backtracking probiert man zuerst irgendwelche zufälligen Werte aus.</p>
+        <p>Dan macht man die Schritte so lange rückgängig, bis man bei einem Valliden Zwischenstand ankommt.</p>
+        <p>Von dort aus versucht man es wieder mit Zufallswerten und geht anschließend bis zu einem Validen Ergebniss
+        </p>
+        <p>Wie man vielleicht erahnen kann, arbeitet dieser Algorithmus mit Rekursion</p>
+        <p>Dies erinnert mich an ein Zitat eines ehemaligen Mitschülers: "Rekursion ist wie Sex. Ziemlich geil, außer
+            wenn sie ungewollt passiert"</p>
+        <p>Ja... Dieses Zitat werde ich damit einfach mal im Raum stehen lassen</p>
+        <p>Kommen wir nun zum Ergebniss. Trommelwirbel bitte</p>
+
+        <figure>
+            <img src="Project-img/Sudoku/Sudo_n.PNG" alt="" class="portfolio-item-individual__img">
+            <figcaption> Oh wie schön, es ist ein Sudoku
+            </figcaption>
+        </figure>
+        <p>Wer hätte es nur erwartet, als ausgabe bekommt man ein gelöstes Sudoku oder bei einem Unmöglichen eine
+            Fehlermeldung
+        </p>
+        <p>Und das in einer Geschwindigkeit, in der ich nicht einmal den erste Zahl hätte lesen können</p>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Soziales / Profile - Momentan noch nicht viel zu sehen -->
+        <a href="mailto:tobiasweber1029@gmail.com" class="footer__link">tobiasweber1029@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/MisterNSA/Sudoku_Solver">
+                    <!--WIP durch helles Logo ersetzen-->
+                    <i class="fab fa-github" style="font-size:50px;color: whitesmoke"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

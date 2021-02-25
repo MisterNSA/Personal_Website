@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Portfolio-Website</title>
+    <!-- Stylesheets aus dem internet für z.B. Symbole etc.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/4911c7165a.js" crossorigin="anonymus"></script>
+
+    <!-- Fonts, die relativ gut aussahen -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- I dont use it because I know how to use it, I use it cause I cant save it as .jpg or .png ... -->
+            <img src="img/Logo.svg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="menu-toggle"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Fähigkeiten und Interessen</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Über mich</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Meine Projekte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Einleitendes -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Ich bin <strong>Tobias Weber</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Programmier Enthusiast</p>
+        <img src="WIP_LINK" alt="Ein  Bild von mir. Es nicht zu sehen ist auch kein Verlusst" class="intro__img">
+    </section>
+
+
+    <!-- Was ich kann -->
+    <section class="my-skills" id="skills">
+        <h2 class="section__title section__title--skills">Fähigkeiten und Interessen</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Gute Kenntnisse</h3>
+                <!--Ich wollte zwar eigentlich eine Liste verwenden, bekomme es allerdings nicht hin die Elemente mittig unter der Überschrift zu Platzieren. Da meines Wissens nach nicht viel ausmacht, lasse ich es jetzt so-->
+                <p>
+                    Python <br>
+                    C# <br>
+                    SQL
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Einsteiger Kenntnisse</h3>
+                <p>
+                    HTML <br>
+                    CSS <br>
+                    JavaScript <br>
+                    Swift <br>
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Interessierte Themen</h3>
+                <p>Ich interessiere mich Grundsätzlich für alle Themen, hauptsache sie sind komplex. Hierbei haben es
+                    mir Künstliche Intelligenz bzw. Neuronale Netze besonders angetan. Der Bereich, der mich am meisten
+                    fasziniert
+                    und den ich unbedingt einmal beherschen möchte sind genetische Algorithmen wie beispielsweise NEAT
+                </p>
+            </div>
+        </div>
+
+        <a href="#projects" class="btn">Meine Projekte</a>
+    </section>
+
+
+    <!-- Über mich -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Über mich</h2>
+        <p class="section__subtitle section__subtitle--about">Selbstgelernter Programmierer</p>
+
+        <div class="about-me__body">
+            <h3>Ein paar allgemeine Infos</h3>
+            <p>Ich heiße Tobias Dominik Weber und bin momentan 19 Jahre alt.</p>
+            <p>Meine Hobbys sind Kochen, Bodybuilding, Lesen, Programmieren und Videospiele spielen.</p>
+            <p>Ich bin eine ruhige und zurückhaltende Person, die besser darin ist zuzuhören, als selbst viel zu
+                sprechen.</p>
+            <p>Wenn ich mich allerdings an eine Person gewöhnt habe und ihr vertraue, kann ich manchmal etwas
+                aufdringlich sein. Gerade wenn es um Themen geht, die mich interessieren, kann man sich manchmal kaum
+                vor Fragen retten.</p>
+            <p>Dies hängt auch damit zusammen, dass ich das Asperger-Syndrom habe. Hierzu habe ich
+                <a href="Asperger.html">hier</a>
+                noch ein paar Informationen sowie meine Sicht und ein paar Erfahrung aufgeführt.
+            </p>
+            <p>Letztendlich bin ich aber auch nur ein Introvertierter Nerd, der es liebt logische und mathematische
+                Probleme zu lösen und seiner Kreativität freien Lauf zu lassen. Und hierzu ist Programmieren das wohl
+                beste, das es gibt.</p>
+        </div>
+
+        <img src="img/talk-is-cheap.JPG" alt="Warum sollte man viel reden, wenn man auch den Code sprechen lassen kann"
+            class="about-me__img">
+
+    </section>
+
+    <!-- Meine Projekte -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">Meine Projekte</h2>
+        <p class="section__subtitle section__subtitle--projects">Eine kleine Variation meiner bisherigen Projekte</p>
+
+        <div class="portfolio">
+            <!-- Projekt 01 -->
+            <a href="Calculator.html" class="portfolio__item">
+                <img src="Project-img/Calc/taschenrechner-logo.png" alt="Ein Taschenrechner" class="portfolio__img"
+                    width="380" height="380">
+            </a>
+
+            <!-- Projekt 02 -->
+            <a href="Sudoku.html" class="portfolio__item">
+                <img src="Project-img/Sudoku/Sudoku.gif" alt="Ein Sudoku" class="portfolio__img" width="380"
+                    height="380">
+            </a>
+
+            <!-- Projekt 03 -->
+            <a href="TicTacToe.html" class="portfolio__item">
+                <img src="Project-img/Tic/TicTacToe-logo.gif" alt="" class="portfolio__img" width="380" height="380">
+            </a>
+
+            <!-- Projekt 04 -->
+            <a href="Card-Engine.html" class="portfolio__item">
+                <img src="img/cards-logo.png" alt="" class="portfolio__img" width="380" height="380">
+            </a>
+
+            <!-- Projekt 05 -->
+            <a href="Task-manager.html" class="portfolio__item">
+                <img src="img/discord-bot-logo.JPG" alt="" class="portfolio__img" width="380" height="380">
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Soziales / Profile - Momentan noch nicht viel zu sehen -->
+        <a href="mailto:tobiasweber1029@gmail.com" class="footer__link">tobiasweber1029@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/MisterNSA">
+                    <i class="fab fa-github" style="font-size:50px;color: whitesmoke"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

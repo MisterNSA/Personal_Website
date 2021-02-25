@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Portfolio-Website</title>
+    <!-- Stylesheets aus dem internet für z.B. Symbole etc.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <script src="https://kit.fontawesome.com/4911c7165a.js" crossorigin="anonymus"></script>
+
+    <!-- Fonts, die relativ gut aussahen -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- I dont use it because I know how to use it, I use it cause I cant save it as .jpg or .png ... -->
+            <img src="img/Logo.svg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="menu-toggle"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#skills" class="nav__link">Fähigkeiten und Interessen</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">Über mich</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">Meine Projekte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Der Klassiker: <strong>TicTacToe</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Verschiedene Variationen</p>
+        <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Wenn ich eine neue Sprache lerne, ist eines der ersten Projekte standartmäßig TicTacToe</p>
+        <p>Da es einerseits zwar simpel ist, aber viele konzepte und mechaniken miteinander verbindet und beliebig
+            erweitert werden kann
+        </p>
+        <figure>
+            <img src="Project-img/Tic/Cs/Tic_Cs_2.PNG" alt="" class="portfolio-item-individual__img">
+            <figcaption>
+                Zuerst einmal die C# Version
+            </figcaption>
+        </figure>
+        <p>
+            Diese Version läuft über die Kommandozeile
+        </p>
+        <p>
+            Das spielbrett ist ein 2D Array, in dem die Symbole gespeichert werden können
+        </p>
+        <p>
+            Da ich es als nervig empfand, den Spieler koordinaten wie 1,2 angeben zu lassen, um ein Feld zu
+            spezifizieren, habe ich einen Switch erstellt, der eine Eingabe von 1-9 in die jeweiligen Koordinaten
+            umwandelt
+        </p>
+        <figure>
+            <img src="Project-img/Tic/Py/Tic_Py_1.PNG" alt="" class="portfolio-item-individual__img">
+            <figcaption>
+                Nun in Python und mit GUI
+            </figcaption>
+        </figure>
+        <p>
+            Bei dieser Version habe ich mich dann auch an eine GUI herangewagt. Der Aufbau ist ähnlich wie bei der C#
+            Version
+        </p>
+        <p>
+            Hier konnte ich mir den Switch sparen, da ich den Buttons direkt Koordinaten zuordnen konnte
+        </p>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Soziales / Profile - Momentan noch nicht viel zu sehen -->
+        <a href="mailto:tobiasweber1029@gmail.com" class="footer__link">tobiasweber1029@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/MisterNSA/OOP_TicTacToe">
+                    <!--WIP durch helles Logo ersetzen-->
+                    <i class="fab fa-github" style="font-size:50px;color: whitesmoke"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
